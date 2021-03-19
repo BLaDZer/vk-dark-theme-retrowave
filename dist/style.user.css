@@ -12,7 +12,7 @@
 [dir] .ui_search_new.ui_search_field_empty .ui_search_button_search { background-color: #242F3D; }
 [dir] .ui_search_new.ui_search_field_empty .ui_search_button_search, [dir] input.ui_search_field { background-image: url(https://static.wixstatic.com/shapes/a7407d_4f9e32d09aec4bad831b6f4e70fb9bad.svg ); }
 [dir] input.ui_search_field { color: #FFF; }
-[dir] .im-page .im-page--center-empty, [dir] .im-page .im-page--chat-search-empty, [dir] .pv_cont .pv_no_commments_placeholder, [dir] .pv_no_commments_placeholder { background-image: url(https://static.wixstatic.com/shapes/a7407d_2633299c002b4650b6140f5cdf7714e5.svg ); }
+/* [dir] .im-page .im-page--center-empty, [dir] .im-page .im-page--chat-search-empty, [dir] .pv_cont .pv_no_commments_placeholder, [dir] .pv_no_commments_placeholder { background-image: url(https://static.wixstatic.com/shapes/a7407d_2633299c002b4650b6140f5cdf7714e5.svg ); } */
 [dir] .no_posts_cover { background-image: url(https://static.wixstatic.com/shapes/a7407d_db7981d2054e4924a7091ce0ef31a493.svg ); }
 [dir] .video_empty_placeholder.no_rows { background-image: url(https://static.wixstatic.com/shapes/a7407d_724b641d3c99450199c5331d77bd26d6.svg ); }
 [dir] .radiobtn:before { background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Ccircle cx='7' cy='7' r='6.5' stroke='%23314154' fill='none'/%3E%3C/svg%3E"); }
