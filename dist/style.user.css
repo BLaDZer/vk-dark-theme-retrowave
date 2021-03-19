@@ -1,17 +1,11 @@
 /* ==UserStyle==
-@namespace      https://github.com/Suvorov-m/styles
-@version        1.1.8
-@description    Dark Theme for VK
-@author         Suvorov Mikhail
-@homepageURL    https://vk.com/vk.darktheme
-
 @name           Redesign VK Dark Theme - Retrowave
-@namespace      https://vk.com/vk.darktheme.retrowave
+@namespace      https://github.com/truepatch/vk-dark-theme-retrowave/blob/main/dist
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными. Не идеaл, ну почти. Сообщения о багах и т.п. пишите прям под постом с последним обновлением, желательно со скринами.`
 @version        1.4
 @license        CC-BY-NC-SA-4.0
-@preprocessor   uso
+@homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
 @-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
 [dir] .pv_cont .pv_closed_commments_placeholder { background-image: url(https://static.wixstatic.com/shapes/a7407d_971b1317f1fb423eacb57c2f6851a330.svg ); }
