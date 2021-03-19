@@ -2541,20 +2541,23 @@ body.new_header_design .TopSearch__input { color: var(--white); }
 }
 /* Цвет заголовка vk */
 [dir] body.new_header_design #page_header_cont {
-background-color: #040404;
-border-bottom: 1px solid #040404;
+	background-color: #040404;
+	border-bottom: 1px solid #040404;
 }
 /* Цвет фона VK */
 [dir] body {
-background: #040404;
+ 	background: #040404;
 }
 [dir] #page_layout {
-background: #040404;
+ 	background: #040404;
 }
 [dir] #page_wrap {
-background-color: #040404;
+	background-color: #040404;
 }
 [dir] body.new_header_design .TopSearch__input {
-background-color: #040404;
+	background-color: #040404;
+}
+[dir] .ui_tabs_header {
+    background-color: #1c2634;
 }
 }
