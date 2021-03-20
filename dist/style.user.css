@@ -9,6 +9,35 @@
 ==/UserStyle== */
 @-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*")
 {
+	:root
+	{
+		--text-white-color: hsla(0, 0%, 100%, .86);
+		--white: var(--text-white-color);
+		/* 		--black: var(--text-white-color); */
+		--text_link: #a3c8f5e6;
+		--text_link: hsla(213, 40%, 70%, .94);
+		--text_link: hsl(212, 48%, 74%);
+		--button-secondary-background-color-hover: rgba( 57, 74, 96, .70196);
+		--gray_300: hsla(212, 11%, 30%, .9);
+		--gray_400: hsla(212, 11%, 44%, .9);
+		--gray_500: hsla(212, 11%, 50%, .9);
+		--gray_600: hsla(212, 11%, 55%, .9);
+		--gray_900: var(--white);
+		--steel_gray_40: #181e2f;
+		--steel_gray_80: hsl(228, 12%, 92%);
+		--steel_gray_80: #181e2f;
+		--steel_gray_100: #dce1e6;
+		--steel_gray_120: hsl(207, 14%, 85%);
+		--steel_gray_400: hsla(216, 29%, 64%, .9);
+		--steel_gray_500: hsla(216, 45%, 74%, .9);
+		--blue_600: #90b4d5eb;
+		--blue_600: #77b7c5e6;
+		--blue_600: #eccc74eb;
+		--light_blue_40: #181e2f;
+		--light_blue_100: rgba( 57, 74, 96, .70196);
+		--light_blue_700: hsla(44, 76%, 40%, .8);
+	}
+
 	[dir] .pv_cont .pv_closed_commments_placeholder
 	{
 		background-image: url(https://static.wixstatic.com/shapes/a7407d_971b1317f1fb423eacb57c2f6851a330.svg );
@@ -654,11 +683,10 @@
 		background-color: #0E1621;
 	}
 
-/* 	[dir] a
+	/* 	[dir] a
 	{
 		color: var(--white);
 	} */
-
 	[dir] a._im_start_new
 	{
 		color: #CCC;
@@ -679,10 +707,7 @@
 		background-color: #181e2f;
 	}
 
-	[dir] a.wall_reply_greeting
-	{
-		color: #BBC8D2;
-	}
+
 
 	[dir] a.wpost_owner_head_name
 	{
@@ -694,13 +719,12 @@
 		color: #9C9C9C;
 	}
 
-/* 	[dir] a.docs_item_name,
+	/* 	[dir] a.docs_item_name,
 	[dir] a.groups_messages_block,
 	[dir] a b
 	{
 		color: var(--white);
 	} */
-
 	[dir] a.groups_messages_block:hover
 	{
 		color: #BBC8D2;
@@ -1566,11 +1590,10 @@
 		background: #181e2f;
 	}
 
-/* 	[dir] .im-mess-stack a
+	/* 	[dir] .im-mess-stack a
 	{
 		color: #8EC5FF;
 	} */
-
 	/* [dir] .im-mess-stack .im-mess-stack--content .im-mess-stack--pname a { color: #7C7F82; } */
 	[dir] .online:after
 	{
@@ -1698,10 +1721,16 @@
 	}
 
 	[dir] .wall_module .media_desc .a,
-	[dir] .wall_module .media_desc .lnk .lnk_mail_description,
-	[dir] .wall_module a.wall_reply_greeting
+	[dir] .wall_module .media_desc .lnk .lnk_mail_description/* 	[dir] .wall_module a.wall_reply_greeting */
 	{
 		color: #BBC8D2;
+		color: var(--text-white-color);
+	}
+
+	[dir] a.wall_reply_greeting
+	{
+		/* 		color: #BBC8D2; */
+		color: var(--text-white-color);
 	}
 
 	[dir] .wall_module .media_desc .lnk.lnk_mail
@@ -3445,11 +3474,10 @@
 		color: var(--white);
 	}
 
-/* 	[dir] div.im-replied--author > a
+	/* 	[dir] div.im-replied--author > a
 	{
 		color: #7C7F82;
 	} */
-
 	[dir] .audio_edit_label
 	{
 		color: var(--white);
@@ -5787,13 +5815,12 @@
 		color: #B3BFCE;
 	}
 
-/* 	[dir] .page_list_module .group_desc,
+	/* 	[dir] .page_list_module .group_desc,
 	[dir] .page_list_module .people_desc,
 	[dir] .page_list_module .people_extra
 	{
 		color: #8C8C8C;
 	} */
-
 	[dir] .mv_info
 	{
 		background-color: #0f161f;
@@ -8078,11 +8105,10 @@
 		border-top-color: #181e2f;
 	}
 
-/* 	[dir] .deep_active.wall_module .post_replies_header .post_replies_reorder
+	/* 	[dir] .deep_active.wall_module .post_replies_header .post_replies_reorder
 	{
 		color: #BBC8D2;
 	} */
-
 	[dir] .deep_active.wall_module:not(.closed_comments) .replies .reply_fakebox
 	{
 		background-color: #0f161f;
@@ -10239,10 +10265,10 @@
 		color: var(--white);
 	}
 
-	[dir] .group_edit_labeled .idd_wrap .idd_selected_value
+/* 	[dir] .group_edit_labeled .idd_wrap .idd_selected_value
 	{
 		color: #BBC8D2;
-	}
+	} */
 
 	[dir] .group_u_photo.online:after
 	{
@@ -10300,7 +10326,7 @@
 		color: #B3BFCE;
 	}
 
-/* 	[dir] .labeled_text a,
+	/* 	[dir] .labeled_text a,
 	[dir] .mv_deleted_message a,
 	[dir] .page_info_wrap a,
 	[dir] .video_item_author a,
@@ -10472,7 +10498,7 @@
 
 	[dir] .idd_wrap .idd_selected_value
 	{
-		color: #BBC8D2 !important;
+		color: var(--text_link);
 	}
 
 	[dir] .videocat_channel_header .videocat_channel_title a
@@ -11895,11 +11921,6 @@
 		background-color: #181e2f;
 	}
 
-	[dir] .video_upload__thumb_chooser_wrap .video_tc_item:hover
-	{
-		background-color: #485E7A;
-	}
-
 	[dir] .video_add_live_tab .video_upload_live_launch_steps_wrap .listing,
 	[dir] .video_edit_live_settings_wrap .video_upload_live_launch_steps_wrap .listing
 	{
@@ -12124,65 +12145,62 @@
 
 @-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*")
 {
-	:root
-	{
-		--text-white-color: hsla(0, 0%, 100%, .86);
-		--white: var(--text-white-color);
-/* 		--black: var(--text-white-color); */
-		--text_link: #a3c8f5e6;
-		--text_link: hsla(213, 40%, 70%, .94);
-		--text_link: hsl(212, 48%, 74%);
-		--button-secondary-background-color-hover: rgba( 57, 74, 96, .70196);
-		--gray_300: hsla(212, 11%, 30%, .9);
-		--gray_400: hsla(212, 11%, 44%, .9);
-		--gray_500: hsla(212, 11%, 50%, .9);
-		--gray_600: hsla(212, 11%, 55%, .9);
-		--gray_900: var(--white);
-		--steel_gray_40: #181e2f;
-		--steel_gray_80: hsl(228, 12%, 92%);
-		--steel_gray_80: #181e2f;
-		--steel_gray_100: #dce1e6;
-		--steel_gray_120: hsl(207, 14%, 85%);
-		--steel_gray_400: hsla(216, 29%, 64%, .9);
-		--steel_gray_500: hsla(216, 45%, 74%, .9);
-		--blue_600: #90b4d5eb;
-		--blue_600: #77b7c5e6;
-		--blue_600: #eccc74eb;
-		--light_blue_40: #181e2f;
-		--light_blue_100: rgba( 57, 74, 96, .70196);
-		--light_blue_700:hsla(44, 76%, 40%, .8);
-	}
 
 	[dir] .im-page--title-reconnect
 	{
-/* 				color: #116DDB; */
+		/* 				color: #116DDB; */
 		color: var(--text_link);
 	}
-	[dir] div.reply_link_wrap > a {
+
+	[dir] div.reply_link_wrap > a
+	{
 		color: var(--gray_400);
 	}
-	[dir] #public_topics .topic_comments > a {
+
+	[dir] #public_topics .topic_comments > a
+	{
 		color: var(--gray_600);
 	}
-	.replies_short_text_deep > span.replies_short_text_name {
+
+	.replies_short_text_deep > span.replies_short_text_name
+	{
 		color: var(--gray_400);
 	}
-	.replies_short_text_deep {
+
+	.replies_short_text_deep
+	{
 		color: var(--gray_400);
 	}
-	.video_item_author > a {
+
+	.group_row_title,
+	.video_item_author > a
+	{
 		color: var(--blue_600);
 	}
-	.wall_post_more, .wall_reply_more, .wall_copy_more, .wall_post_attaches_more {
+
+	.wall_post_more,
+	.wall_reply_more,
+	.wall_copy_more,
+	.wall_post_attaches_more
+	{
 		color: var(--text_link);
 	}
-	[dir] .narrow_column.narrow_redesign .page_block.page_block_groups .empty .module_body:hover {
-    	background-color: #181e30;
-    }
-/* 		[dir] .im-replied--author-link
+
+	[dir] .narrow_column.narrow_redesign .page_block.page_block_groups .empty .module_body:hover
+	{
+		background-color: #181e30;
+	}
+
+	/* 		[dir] .im-replied--author-link
 	{
 		color: var(--blue_600);
 	} */
+
+/* 	#wpt-90051042_870429 > div > a */
+
+	[dir] .wall_reply_text .mem_link {
+		color: var(--text-white-color);
+	}
 	[dir] .article_layer .article_layer__dark
 	{
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' viewBox='0 0 48 48' width='48'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m0 0h48v48h-48z'/%3E%3Cpath d='m19.4673411 11.2326905c-4.4129352 2.0784574-7.4673411 6.5661861-7.4673411 11.7673095 0 7.1797017 5.8202983 13 13 13 5.20282 0 9.6917798-3.0563989 11.7693427-7.4716601-4.5466308 1.9925303-10.2748059.9391439-14.2570083-3.0430585-3.9809128-3.9809129-5.0349062-9.7066677-3.0449933-14.2525909z' stroke='%23ae81ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
@@ -13150,11 +13168,10 @@
 		background-color: #0f161f;
 	}
 
-/* 	[dir] .video_upload .box_controls .flat_button.secondary:hover
+	/* 	[dir] .video_upload .box_controls .flat_button.secondary:hover
 	{
 		background-color: rgba( 57, 74, 96, .70196)
 	} */
-
 	[dir=ltr] .video_upload__upload_subtitles_left
 	{
 		border-right-color: #181e2f;
@@ -13293,4 +13310,8 @@
 	{
 		color: var(--blue_600);
 	}
+	.video_upload_live_launch_steps_wrap .listing,
+	.GroupsRecommendationsBlock__header {
+    color: var(--text-white-color);
+}
 }
