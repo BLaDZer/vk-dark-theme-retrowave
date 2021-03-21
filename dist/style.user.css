@@ -3,7 +3,7 @@
 @namespace      https://github.com/truepatch/vk-dark-theme-retrowave/blob/main/dist
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными. Не идеaл, ну почти. Сообщения о багах и т.п. пишите прям под постом с последним обновлением, желательно со скринами.`
-@version        1.4.5
+@version        1.4.6
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
@@ -23,7 +23,7 @@
 		--gray_500: hsla(212, 11%, 50%, .9);
 		--gray_600: hsla(212, 11%, 55%, .9);
 /* 		--gray_800: hsl(212, 11%, 35%); */
-/* 		--gray_900: #1d2635; */
+/* 		--gray_900: #1d2635; //меняет фон */
 		--steel_gray_40: #1d2635;
 		--steel_gray_80: hsl(228, 12%, 92%);
 		--steel_gray_80: #1d2635;
@@ -1694,7 +1694,7 @@
 
 	[dir] .tt_w
 	{
-		color: var(--text_link);
+		color: var(--text-white-color);
 	}
 
 	[dir] .tt_w.top_notify_tt
