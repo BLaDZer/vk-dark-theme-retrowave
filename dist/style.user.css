@@ -3,7 +3,7 @@
 @namespace      https://github.com/truepatch/vk-dark-theme-retrowave/blob/main/dist
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными. Не идеaл, ну почти. Сообщения о багах и т.п. пишите прям под постом с последним обновлением, желательно со скринами.`
-@version        1.4.7
+@version        1.4.8
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
@@ -11,12 +11,13 @@
 {
 	:root
 	{
-		--text-white-color: hsla(0, 0%, 100%, .86);
+		--text-white-color: hsla(0, 0%, 91%, .9);
 		--white: var(--text-white-color);
+		--text_primary: hsla(0, 0%, 98%, .9);
 		/* 		--black: var(--text-white-color); */
 		--text_link: #a3c8f5e6;
-		--text_link: #94afd1f0;
-		--text_link: #9dbbdd;
+/* 		--text_link: #B4C8E0; */
+		--text_link: hsla(214, 53%, 76%, .96);
 		--button-secondary-background-color-hover: #394a60b3;
 		--gray_300: #444c55e6;
 		--gray_400: #646f7de6;
@@ -105,7 +106,7 @@
 	[dir] .audio_row .audio_row__performers a
 	{
 		color: #577eb7;
-		color: var(--steel_gray_400);
+/* 		color: var(--steel_gray_400); */
 	}
 	/* PHOTO */
 	[dir] #pv_more_acts_tt {
@@ -689,7 +690,7 @@
 
 	[dir] body
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] body,
@@ -849,7 +850,7 @@
 
 	[dir] .audio_row .audio_row__lyrics .audio_row__lyrics_inner
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .audio_row.audio_row__current .audio_row_content
@@ -863,12 +864,12 @@
 	} */
 	[dir] .audio_row .audio_row__position
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .audio_row__more_actions .audio_row__more_action
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background-color: #161b27;
 	}
 
@@ -890,7 +891,7 @@
 
 	[dir] .audio_w_covers .ap_layer .audio_pl_snippet2.audio_pl__has_desc .audio_pl_snippet__description
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .audio_w_covers .audio_podcast .audio_row__title_inner
@@ -1243,7 +1244,7 @@
 
 	[dir] .im-page_classic .im-page--top-notice .im-notice--text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .im-page_classic .im-page--chat-header
@@ -1730,7 +1731,7 @@
 	[dir] .tt_w.group_edit_obscene_words_hint .tt_text,
 	[dir] .tt_w .tt_text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .box_controls
@@ -1741,7 +1742,7 @@
 
 	[dir] .box_controls .flat_button.secondary
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .box_controls .flat_button.secondary:hover
@@ -1866,7 +1867,7 @@
 
 	[dir] .wall_module .reply.reply_deleted .reply_text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .wall_module .like_count
@@ -3190,7 +3191,7 @@
 
 	[dir] .ui_rmenu_item
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .ui_rmenu_item:hover
@@ -3200,7 +3201,7 @@
 
 	[dir] .ui_rmenu_subitem
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .ui_rmenu_subitem:hover
@@ -3299,7 +3300,7 @@
 
 	[dir] .flat_button.secondary.button_light
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .flat_button.secondary.button_light:hover
@@ -3827,7 +3828,7 @@
 
 	[dir] .privacy_dropdown .header
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background-color: #0E1621;
 		border-color: #20273c;
 	}
@@ -4826,7 +4827,7 @@
 	[dir] .header_side_link,
 	[dir] .header_side_link a
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .app_link
@@ -6117,7 +6118,7 @@
 
 	[dir] .dev_methods_list_desc
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .dev_mlist_item
@@ -6364,7 +6365,7 @@
 
 	[dir] #ads_unions_content h4 span
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] #admin_form_table_wrapper
@@ -6592,7 +6593,7 @@
 	[dir] .landing_moneysend_mastercard_block,
 	[dir] .landing_moneysend_when
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] #header
@@ -6774,7 +6775,7 @@
 	[dir] #wrapper_delay_graph,
 	[dir] #wrapper_uptime_graph
 	{
-		color: #E0E0E0 !important;
+		color: var(--white) !important;
 	}
 
 	[dir] .dev_main_sep
@@ -6967,7 +6968,7 @@
 
 	[dir] .bt_sb_block
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		border-top-color: #20273c;
 	}
 
@@ -7375,7 +7376,7 @@
 
 	[dir] .im-popular--name
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .im-dropbox--rect
@@ -7460,7 +7461,7 @@
 	[dir] .group_online_answer_status_description,
 	[dir] .group_online_status_description
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .article
@@ -7495,7 +7496,7 @@
 
 	[dir] .article > figure figcaption.article_ed__figcaption .article_ed__figcaption_edit
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .article > :not(figure) a
@@ -7564,7 +7565,7 @@
 	[dir] .article_ed_layer .article_ed_guide #slide_4 .article_ed_guide__slide_text,
 	[dir] .article_ed_layer .article_ed_guide #slide_5 .article_ed_guide__slide_text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .article_ed_layer .article_ed_layer__publish_settings .article_ed_layer__publish_settings_header
@@ -7845,7 +7846,7 @@
 	[dir] .media_voting_option_percent,
 	[dir] .media_voting_option_text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .media_voting_info
@@ -7876,7 +7877,7 @@
 	[dir] #apps_layer .apps_header .apps_name
 	{
 		margin-left: 25px;
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] #apps_layer .apps_header .group_name .group_link
@@ -7924,7 +7925,7 @@
 
 	[dir] .Entity__title
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .MessageForward__results
@@ -8006,12 +8007,12 @@
 
 	[dir] .audio_pl_snippet2 .audio_pl_snippet__info_title
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .audio_pl_snippet2 .audio_shuffle_all_button
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background: #161b27;
 	}
 
@@ -8030,7 +8031,7 @@
 	[dir] .audio_pl_snippet2 .audio_pl_snippet__info_author .group_link,
 	[dir] .audio_pl_snippet2.audio_pl_snippet_small .audio_pl_snippet__info_line_small > .audio_pl_snippet__artist_link
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .poster__change-bkg-btn
@@ -8076,7 +8077,7 @@
 
 	[dir] .im-replied--text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .im-replied:before
@@ -8450,7 +8451,7 @@
 
 	[dir] .index_user_name
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .post_action_btn,
@@ -8499,7 +8500,7 @@
 
 	[dir] .wk_address_content .addresses_wrap .address .address_time_status .address_time_status_cur_time
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .wk_address_content .addresses_wrap .address .address_timetable .address_timetable_one_day
@@ -8509,7 +8510,7 @@
 
 	[dir] .wk_address_content .addresses_wrap .address .address_timetable .address_timetable_one_day.on
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .author_page_article_title
@@ -8519,7 +8520,7 @@
 
 	[dir] .video_choose_upload_area
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background: #0E1621;
 	}
 
@@ -8530,7 +8531,7 @@
 
 	[dir] .video_add_external
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background: #0E1621;
 	}
 
@@ -8579,7 +8580,7 @@
 	[dir] .podcast_episode_layer__author,
 	[dir] .podcast_episode_layer__title
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .ui_gallery_wall_cards .wall_card__title_link
@@ -8616,7 +8617,7 @@
 
 	[dir] .Select__control
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .Button--tertiary
@@ -8758,7 +8759,7 @@
 
 	[dir] .notify_sources_tt_content .line_cell .info
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .notify_sources_tt_content .line_cell .info.group_notify_add_source_button
@@ -8855,7 +8856,7 @@
 
 	[dir] .market_row_price
 	{
-		color: #E0E0E0 !important;
+		color: var(--white) !important;
 	}
 
 	[dir] .groups_create_type .groups_create_title
@@ -8865,7 +8866,7 @@
 
 	[dir] .groups_create_type .groups_create_tile_title
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .groups_create_type .groups_create_tile_description
@@ -8885,7 +8886,7 @@
 
 	[dir] .groups_create_box .groups_create_box_about
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .groups_create_box .groups_create_box_field_date .groups_create_box_field_date_at_time,
@@ -9041,7 +9042,7 @@
 
 	[dir] .im-aside-notice
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background: #161b27;
 		box-shadow: 0 1px 0 0 #20273c, 0 0 0 1px #20273c;
 	}
@@ -9210,7 +9211,7 @@
 
 	[dir] .apps_install_settings__item
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background-color: #20273c;
 	}
 
@@ -9333,12 +9334,12 @@
 	[dir] .ads_edit_tt_text,
 	[dir] .ads_schedule_preset
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .ads_schedule_preset:hover
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background-color: #20273c;
 	}
 
@@ -9420,7 +9421,7 @@
 
 	[dir] #stat_group_postsreach_table td
 	{
-		color: #E0E0E0;
+		color: var(--white);
 		background: #161b27;
 		border-bottom-color: #20273c;
 	}
@@ -9723,7 +9724,7 @@
 
 	[dir] .audio_subscribe_promo__title
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .audio_subscribe_promo__text
@@ -10581,7 +10582,7 @@
 
 	[dir] .landing_moneysend .landing_page_text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .smartfeed_notification .notification_info .notification_title,
@@ -10726,7 +10727,7 @@
 
 	[dir] .wl_post_actions_wrap .ui_actions_menu_more
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .feed_blog_reminder_title a
@@ -10895,7 +10896,7 @@
 
 	[dir] .group_link audio_pl_snippet__artist_link
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	/* [dir] .audio_pl_item2 .audio_pl__subtitle, [dir] .audio_pl_item2 .audio_pl__subtitle > a { color: #7C7F82; } */
@@ -11126,7 +11127,7 @@
 
 	[dir] .groups_welcome_box .groups_welcome_box_wrap .groups_welcome_box_content .groups_welcome_box_content_text
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .group_info_row.onboarding_placeholder .line_value.line_edit
@@ -11153,7 +11154,7 @@
 
 	[dir] .group_info_rows_redesign .group_info_row.time .address_time_status_cur_time
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] #wk_summary .summary
@@ -11213,7 +11214,7 @@
 
 	[dir] .no_rows b
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .ads_edit_easy_promote_box__payments-systems-row > div
@@ -11424,7 +11425,7 @@
 
 	[dir] .pretty-card__title
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .pretty-cards__scroller_position_left,
@@ -11696,7 +11697,7 @@
 
 	[dir] .AudioPlaylistSnippet h1.AudioPlaylistSnippet__title--main
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .AudioPlaylistSnippet .ActionButton--shuffle:hover
@@ -11879,7 +11880,7 @@
 
 	[dir] .AudioPlaylistSnippet__author a
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	[dir] .top_profile_vkconnect_row:hover
@@ -12936,7 +12937,7 @@
 	.StickerProductsGift__recipientsLabel,
 	.StickerProductsGift__messageLabel
 	{
-		color: #E0E0E0;
+		color: var(--white);
 	}
 
 	#StickerProductsGiftRecipientsInput
