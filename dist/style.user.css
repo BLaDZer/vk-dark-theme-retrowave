@@ -3,7 +3,7 @@
 @namespace      https://github.com/truepatch/vk-dark-theme-retrowave/blob/main/dist
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными. Не идеaл, ну почти. Сообщения о багах и т.п. пишите прям под постом с последним обновлением, желательно со скринами.`
-@version        1.4.8
+@version        1.4.9
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
@@ -11,13 +11,14 @@
 {
 	:root
 	{
-		--text-white-color: hsla(0, 0%, 91%, .9);
+		--text-white-color: #e8e8e8e6;
 		--white: var(--text-white-color);
-		--text_primary: hsla(0, 0%, 98%, .9);
+		--text_primary: #fafafae6;
 		/* 		--black: var(--text-white-color); */
 		--text_link: #a3c8f5e6;
-/* 		--text_link: #B4C8E0; */
-		--text_link: hsla(214, 53%, 76%, .96);
+/* 		--text_link: var(--text_link2); */
+		--text_link: #9fbde5f5;
+		--text_link2: hsla(214, 52%, 80%, .961);
 		--button-secondary-background-color-hover: #394a60b3;
 		--gray_300: #444c55e6;
 		--gray_400: #646f7de6;
@@ -37,7 +38,7 @@
 		--steel_gray_500: #9fb7dbe6;
 		--blue_600: #90b4d5eb;
 		--blue_600: #77b7c5e6;
-		--blue_600: hsla(44, 64%, 64%, .97);
+		--blue_600: #e2c679f7;
 		--light_blue_40: #20273c;
 		--light_blue_100: #394a60b3;
 		--light_blue_700: #947214cc;
@@ -70,17 +71,17 @@
 	[dir] .mv_playlist
 	{
 		/*     	background-color: var(--gray_900); */
-		background-color: hsl(0, 0%, 12%);
+		background-color: #1f1f1f;
 	}
 
 	[dir] .VideoRecomsItem
 	{
-		background-color: hsla(0, 0%, 4%, .9);
+		background-color: #0a0a0ae6;
 	}
 
 	[dir] .VideoRecomsItem:hover
 	{
-		background-color: hsl(0, 0%, 12%);
+		background-color: #1f1f1f;
 	}
 
 /* 	[dir] .VideoRecomsItem.VideoRecomsItem--active
@@ -91,7 +92,7 @@
 
 	[dir] .mv_pl_scrollbar_cont.scrollbar_cont
 	{
-		background-color: rgba(200, 200, 200, 0);
+		background-color: #c8c8c800;
 	}
 
 	/* 	MUSIC  */
@@ -4493,7 +4494,7 @@
 
 	[dir] .blst_title
 	{
-		color: #B4C8E0;
+		color: var(--text_link2);
 	}
 
 	[dir] .blst_mem
@@ -7789,7 +7790,7 @@
 	[dir] .page_market_item_narrow,
 	[dir] .page_market_item_narrow:hover
 	{
-		color: #B4C8E0;
+		color: var(--text_link2);
 	}
 
 	[dir] .page_photo.page_action_menu_groups .page_actions_item
@@ -7801,7 +7802,7 @@
 	[dir] .page_photo.page_action_menu_groups .page_actions_item:active,
 	[dir] .page_photo.page_action_menu_groups .page_actions_item:hover
 	{
-		color: #B4C8E0;
+		color: var(--text_link2);
 	}
 
 	[dir] .page_photo.page_action_menu_groups .group_notification_settings .group_notification_setting:hover,
@@ -9687,7 +9688,7 @@
 
 	[dir] .mail_link__title
 	{
-		color: #B4C8E0;
+		color: var(--text_link2);
 	}
 
 	[dir] .thumbed_link__thumb
@@ -9704,7 +9705,7 @@
 
 	[dir] .thumbed_link__title
 	{
-		color: #B4C8E0 !important;
+		color: var(--text_link2) !important;
 	}
 
 	[dir] .media_link__title
@@ -11088,7 +11089,7 @@
 
 	[dir] #group_apps_list .group_apps_list_rows .group_apps_list_row .group_apps_list_row_info .group_apps_list_row_info_field.group_apps_list_row_info_app_name
 	{
-		color: #B4C8E0;
+		color: var(--text_link2);
 	}
 
 	[dir] #group_apps_list .group_apps_list_rows.group_apps_list_rows_multi .group_apps_list_row_drag_wrapper
@@ -12268,6 +12269,28 @@
 		color: var(--text-white-color);
 	}
 
+	[dir] .notifier_baloon_wrap a, .notifier_baloon_msg span.mem_link, .notifier_baloon_msg span.group_link {
+    	color: var(--text-white-color);
+	}
+	#group_followers  a {
+		color: var(--blue_600);
+	}
+	#groups_recommendations > .GroupsRecommendationsBlock__list a.right_list_title {
+		color: var(--blue_600);
+	}
+	#public_followers a {
+		color: var(--blue_600);
+	}
+	#public_contacts .people_name > a {
+		color: var(--blue_600);
+	}
+	#public_articles a {
+		color: var(--text-white-color);
+	}
+	#public_topics a {
+		color: var(--text_link2);
+	}
+/* 	 ===================== */
 	[dir] .article_layer .article_layer__dark
 	{
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' viewBox='0 0 48 48' width='48'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m0 0h48v48h-48z'/%3E%3Cpath d='m19.4673411 11.2326905c-4.4129352 2.0784574-7.4673411 6.5661861-7.4673411 11.7673095 0 7.1797017 5.8202983 13 13 13 5.20282 0 9.6917798-3.0563989 11.7693427-7.4716601-4.5466308 1.9925303-10.2748059.9391439-14.2570083-3.0430585-3.9809128-3.9809129-5.0349062-9.7066677-3.0449933-14.2525909z' stroke='%23ae81ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
@@ -13329,29 +13352,29 @@
 	/* Цвет заголовка vk */
 	[dir] body.new_header_design #page_header_cont
 	{
-		background-color: #0b0b14;
-		border-bottom: 1px solid #0b0b14;
+		background-color: #0b1119;
+		border-bottom-color: #0b1119;
 	}
 
 	/* Цвет фона VK */
 	[dir] body
 	{
-		background: #0b0b14;
+		background: #0b1119;
 	}
 
 	[dir] #page_layout
 	{
-		background: #0b0b14;
+		background: #0b1119;
 	}
 
 	[dir] #page_wrap
 	{
-		background-color: #0b0b14;
+		background-color: #0b1119;
 	}
 
 	[dir] body.new_header_design .TopSearch__input
 	{
-		background-color: #0b0b14;
+		background-color: #0b1119;
 	}
 
 	[dir] .ui_tabs_header
