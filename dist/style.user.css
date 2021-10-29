@@ -3,7 +3,7 @@
 @namespace      url(http://www.w3.org/1999/xhtml)
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.`
-@version        1.5.2
+@version        1.5.4
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
@@ -12,6 +12,8 @@
 	.MEConfig,
 	:root
 	{
+		--input_border: #20273c;
+		--header_search_field_background:#161b27;
 		--background_content: #161b27;
 		--modal_card_background: #161b27;
 		--text-white-color: #e8e8e8e6;
@@ -62,16 +64,16 @@
 		background-image: url(https://static.wixstatic.com/shapes/a7407d_971b1317f1fb423eacb57c2f6851a330.svg)
 	}
 
-	[dir] .ui_search_new.ui_search_field_empty .ui_search_button_search,
+	/*	[dir] .ui_search_new.ui_search_field_empty .ui_search_button_search,
 	[dir] input.ui_search_field
 	{
 		background-image: url(https://static.wixstatic.com/shapes/a7407d_4f9e32d09aec4bad831b6f4e70fb9bad.svg)
 	}
-
-	[dir] input.ui_search_field
+	[dir] .box_body .ui_search_new input.ui_search_field, [dir] .ui_search_new input.ui_search_field, [dir] .box_body .ui_search_new input.ui_search_field~.placeholder .ph_input, [dir] .ui_search_new input.ui_search_field~.placeholder .ph_input 
 	{
-		color: var(--white)
-	}
+		color: var(--white);
+		background-color: #161b27;
+	}*/
 
 	[dir] .mv_playlist
 	{
@@ -6648,10 +6650,11 @@
 
 	[dir] .ui_search_new .ui_search_input_inner
 	{
-		border-color: #20273c
+		border-color: #20273c;
+		background-color: #161b27;
 	}
 
-	[dir] .ui_search_new .ui_search_button_search
+	[dir] .CatalogBlock__audio_friends .ui_search_new .ui_search_button_search 
 	{
 		background-color: #20273c;
 		border-color: #20273c
@@ -6672,6 +6675,18 @@
 		background-color: #2a3647
 	}
 
+	[dir] .ui_search_new .ui_search_input_inner
+	{
+		border-color: #20273c;
+		background-color: #161b27;
+	}
+
+	[dir] .ui_search_new
+	{
+		border-color: #20273c;
+		background-color: #161b27;
+	}
+	
 	[dir] .ui_search_sugg_list
 	{
 		background-color: #161b27;
