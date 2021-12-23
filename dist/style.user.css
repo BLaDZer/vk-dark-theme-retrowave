@@ -3,7 +3,7 @@
 @namespace      url(http://www.w3.org/1999/xhtml)
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.`
-@version        1.5.5
+@version        1.5.6
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
@@ -11,6 +11,7 @@
 {
   .MEConfig,
   :root {
+    --text_muted: #e8e8e8e6;
     --placeholder_icon_foreground_secondary: #646f7de6;
     --header_text: #fafafae6;
     --input_background: #161b27;
