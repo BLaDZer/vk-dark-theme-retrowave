@@ -3,7 +3,7 @@
 @namespace      url(http://www.w3.org/1999/xhtml)
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.`
-@version        1.5.7
+@version        1.5.8
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
@@ -226,7 +226,7 @@
 
 	[dir] .settings_narrow_row input[type=checkbox] + label:before
 	{
-		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvgxmlns='http://www.w3.org/2000/svg'height='15'width='15'%3E%3Cgfill='none'fill-rule='evenodd'%3E%3Crectfill='%23161b27'height='15'rx='3'width='15'/%3E%3Crectheight='14'rx='3'stroke='%23314154'width='14'x='.5'y='.5'/%3E%3C/g%3E%3C/svg%3E")
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.05 2.53C4.79 2.13 5.52 2 7.13 2h5.74c1.61 0 2.34.14 3.08.53.65.35 1.17.87 1.52 1.52.4.74.53 1.47.53 3.08v5.74c0 1.61-.14 2.34-.53 3.08a3.64 3.64 0 01-1.52 1.52c-.74.4-1.47.53-3.08.53H7.13c-1.61 0-2.34-.14-3.08-.53a3.64 3.64 0 01-1.52-1.52c-.4-.74-.53-1.47-.53-3.08V7.13c0-1.61.14-2.34.53-3.08a3.65 3.65 0 011.52-1.52zm3.08.97c-1.53 0-1.96.14-2.38.36a2.15 2.15 0 00-.9.9c-.21.4-.35.84-.35 2.37v5.74c0 1.53.14 1.96.36 2.38.2.39.5.69.9.9.4.21.84.35 2.37.35h5.74c1.53 0 1.96-.14 2.38-.36.39-.2.69-.5.9-.9.21-.4.35-.84.35-2.37V7.13c0-1.53-.14-1.96-.36-2.38a2.15 2.15 0 00-.9-.9c-.4-.21-.84-.35-2.37-.35H7.13z' fill='%23314154'/%3E%3C/svg%3E");
 	}
 
 	[dir] .mob_onl
