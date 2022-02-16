@@ -3,7 +3,7 @@
 @namespace      url(http://www.w3.org/1999/xhtml)
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.`
-@version        1.5.9
+@version        1.6.0
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://vk.com/vk.darktheme.retrowave
 ==/UserStyle== */
@@ -14,7 +14,7 @@
 	{
 /* 		--border-with-outher: #314154; */
 /* 		--border-with-outher: 99%; */
-
+		--separator_alternate: #20273c;
 		--icon_tertiary: #314154;
 		--field_background: #161b27;
 		--header_background: #161b27;
@@ -162,16 +162,16 @@
 		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvgxmlns='http://www.w3.org/2000/svg'width='14'height='14'%3E%3Cgfill='none'fill-rule='evenodd'%3E%3Ccirclecx='7'cy='7'r='7'/%3E%3Ccirclecx='7'cy='7'r='6.5'stroke='%235181B8'/%3E%3Ccirclecx='7'cy='7'r='3'fill='%235181B8'fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E")
 	} */
 
-	[dir] .radiobtn.disabled:before
+/* 	[dir] .radiobtn.disabled:before
 	{
 		opacity: 1
-	}
+	} */
 
-	[dir] .radiobtn.disabled:before,
+/* 	[dir] .radiobtn.disabled:before,
 	[dir] .radiobtn.disabled:hover:before
 	{
 		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvgxmlns='http://www.w3.org/2000/svg'width='14'height='14'%3E%3Cgfill='none'fill-rule='evenodd'%3E%3Ccirclecx='7'cy='7'r='7'/%3E%3Ccirclecx='7'cy='7'r='6.5'stroke='%23494D50'/%3E%3C/g%3E%3C/svg%3E")
-	}
+	} */
 
 	[dir] .olist_checkbox
 	{
@@ -209,19 +209,6 @@
 		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvgxmlns='http://www.w3.org/2000/svg'height='15'width='15'%3E%3Cgfill='none'fill-rule='evenodd'%3E%3Crectfill='%2320273c'fill-opacity='.4'height='15'rx='3'width='15'/%3E%3Crectheight='14'rx='3'stroke='%23314154'width='14'x='.5'y='.5'/%3E%3C/g%3E%3C/svg%3E")
 	} */
 
-	[dir] .checkbox.disabled:before
-	{
-		opacity: .9
-	}
-
-	[dir] .checkbox.disabled:before,
-	[dir] .checkbox.disabled:hover:before
-	{
-		background: #161b27;
-		border: 1px solid #20273c;
-		border-radius: 4px
-	}
-
 	[dir] .checkbox + .Post__copyrightButton:after
 	{
 		background: #20273c
@@ -248,13 +235,13 @@
 		background-color: #7c7f82
 	}
 
-	[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom,
+/* 	[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom,
 	[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,
 	[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_bottom,
 	[dir] .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_top
 	{
 		background-image: url(https://static.wixstatic.com/media/a7407d_1a3f2eeb281c42d0ad29259bada33553~mv2.png)
-	}
+	} */
 
 	[dir] .ui_scroll_default_theme .ui_scroll_bar_container:hover .ui_scroll_bar_inner,
 	[dir] .ui_scroll_default_theme.ui_scroll_dragging .ui_scroll_bar_inner
@@ -268,27 +255,27 @@
 		background: #7c7f82
 	}
 
-	[dir] .ui_scroll_emoji_theme .ui_scroll_shadow_bottom,
+/* 	[dir] .ui_scroll_emoji_theme .ui_scroll_shadow_bottom,
 	[dir] .ui_scroll_emoji_theme .ui_scroll_shadow_top
 	{
 		background-image: url(https://static.wixstatic.com/media/a7407d_1a3f2eeb281c42d0ad29259bada33553~mv2.png)
-	}
+	} */
 
-	[dir] .emoji_sprite
+/* 	[dir] .emoji_sprite
 	{
 		background-image: url(https://static.wixstatic.com/media/a7407d_91645f8ba35049e19c069d3f60866f4e~mv2.png);
 		background-repeat: no-repeat
-	}
+	} */
 
-	[dir] .emoji_cats_title_helper:after
+/* 	[dir] .emoji_cats_title_helper:after
 	{
 		background-image: url(https://static.wixstatic.com/media/a7407d_1a3f2eeb281c42d0ad29259bada33553~mv2.png)
-	}
+	} */
 
-	[dir] .emoji_tab_icon_favorite
+/* 	[dir] .emoji_tab_icon_favorite
 	{
 		background-image: url(https://static.wixstatic.com/shapes/a7407d_46f47354883e447796fa6ef2f4dbc40f.svg)
-	}
+	} */
 
 	[dir] .audio_pl_edit_box .ape_audios_empty_list:before
 	{
@@ -11406,7 +11393,8 @@
 	[dir] .sticker_img,
 	[dir] .StickersPanel__previewImage
 	{
-		filter: drop-shadow(1px 0 0 rgba(255, 255, 255, .7)) drop-shadow(-1px 0 0 rgba(255, 255, 255, .7)) drop-shadow(0 -1px 0 rgba(255, 255, 255, .7)) drop-shadow(0 1px 0 rgba(255, 255, 255, .7)) drop-shadow(1px 1px 0 rgba(255, 255, 255, .7)) drop-shadow(-1px 1px 0 rgba(255, 255, 255, .7)) drop-shadow(1px -1px 0 rgba(255, 255, 255, .7)) drop-shadow(-1px -1px 0 rgba(255, 255, 255, .7))
+		filter: drop-shadow(1px 0 0 rgba(255, 255, 255, .9)) drop-shadow(-1px 0 0 rgba(255, 255, 255, .9)) drop-shadow(0 -1px 0 rgba(255, 255, 255, .9)) drop-shadow(0 1px 0 rgba(255, 255, 255, .9))
+/* 					filter: drop-shadow(1px 0 0 rgba(255, 255, 255, .7)) drop-shadow(-1px 0 0 rgba(255, 255, 255, .7)) drop-shadow(0 -1px 0 rgba(255, 255, 255, .7)) drop-shadow(0 1px 0 rgba(255, 255, 255, .7)) drop-shadow(1px 1px 0 rgba(255, 255, 255, .7)) drop-shadow(-1px 1px 0 rgba(255, 255, 255, .7)) drop-shadow(1px -1px 0 rgba(255, 255, 255, .7)) drop-shadow(-1px -1px 0 rgba(255, 255, 255, .7)) */
 	}
 
 	[dir] .notifier_baloon
@@ -12923,7 +12911,7 @@
 
 	[dir] .StickersProductPreview__stickers
 	{
-		filter: drop-shadow( 1px 0 0 rgba( 255, 255, 255, .7)) drop-shadow( -1px 0 0 rgba( 255, 255, 255, .7)) drop-shadow( 0 -1px 0 rgba( 255, 255, 255, .7)) drop-shadow( 0 1px 0 rgba( 255, 255, 255, .7)) drop-shadow( 1px 1px 0 rgba( 255, 255, 255, .7)) drop-shadow( -1px 1px 0 rgba( 255, 255, 255, .7)) drop-shadow( 1px -1px 0 rgba( 255, 255, 255, .7)) drop-shadow( -1px -1px 0 rgba( 255, 255, 255, .7));
+		filter: drop-shadow( 1px 0 0 rgba( 255, 255, 255, .7)) drop-shadow( -1px 0 0 rgba( 255, 255, 255, .7)) drop-shadow( 0 -1px 0 rgba( 255, 255, 255, .7)) drop-shadow( 0 1px 0 rgba( 255, 255, 255, .7));
 	}
 
 	[dir] .StickerProductsGift__content
