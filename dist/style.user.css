@@ -6133,9 +6133,14 @@
 		color: var(--white);
 	}
 
-	[dir] .page_block {
+	[dir] .page_block,
+	[dir] .vkuiGroup {
 		background-color: #161b27;
 		box-shadow: 0 1px 0 0 #20273c, 0 0 0 1px #20273c;
+	}
+
+	[dir] .vkuiGroup--mode-card::before {
+		box-shadow: unset;
 	}
 
 	[dir] .page_block #all_shown {
