@@ -3,7 +3,7 @@
 @namespace      url(http://www.w3.org/1999/xhtml)
 @author         Maksim Alyabyshev
 @description    `Тёмная тема выполненная в стиле тёмно-синих оттенках Retrowave стиля.Если цвета слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.`
-@version        1.7.9
+@version        1.7.10
 @license        CC-BY-NC-SA-4.0
 @homepageURL    https://github.com/BLaDZer/vk-dark-theme-retrowave
 ==/UserStyle== */
@@ -2141,7 +2141,8 @@
 		border-top-color: #20273c;
 	}
 
-	[dir] #top_profile_menu {
+	[dir] #top_profile_menu,
+	[dir] .top_profile_vkconnect_card_wrapper [class^="EcosystemAccountMenu_menu__"] {
 		background: #161b27;
 		border-color: #20273c;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
@@ -6138,6 +6139,10 @@
 	[dir] .ProfileWrapper .ProfileHeader__in {
 		background-color: #161b27;
 		box-shadow: 0 1px 0 0 #20273c, 0 0 0 1px #20273c;
+	}
+
+	[dir] .ProfileWrapper .ProfileHeader__in {
+		border-radius: unset;
 	}
 
 	[dir] .PhotoPrimaryAttachment--thinBorder {
