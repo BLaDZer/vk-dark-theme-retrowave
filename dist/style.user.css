@@ -6141,10 +6141,6 @@
 		box-shadow: 0 1px 0 0 #20273c, 0 0 0 1px #20273c;
 	}
 
-	[dir] .ProfileWrapper .ProfileHeader__in {
-		border-radius: unset;
-	}
-
 	[dir] .PhotoPrimaryAttachment--thinBorder {
 		box-shadow: 0 1px 0 0 #20273c, 0 0 0 1px #20273c;
 	}
