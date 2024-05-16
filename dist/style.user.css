@@ -6134,7 +6134,8 @@
 	}
 
 	[dir] .page_block,
-	[dir] .vkuiGroup {
+	[dir] .vkuiGroup,
+	[dir] .ProfileWrapper .ProfileHeader__in {
 		background-color: #161b27;
 		box-shadow: 0 1px 0 0 #20273c, 0 0 0 1px #20273c;
 	}
